@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Make_test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('bgimg.jpeg');
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 120px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 120px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: pink;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+	</style>
+
+</head>
+
+<body style="background:#E0FFFF; background-image: url('bgimg.jpeg');  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;">
+
+	
+	<form action="TESTCreateFORM.php" method="POST">
+	<center>
+<h2 style="color: white;">Create a Test</h2><br>
+</center>
+
+<h3 style="color: white;">Choose a Subject</h3><br>
+<div class="navbar">
+  
+  <div class="dropdown">
+    <button class="dropbtn" style="color:blue;">Subjects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Science</a>
+      <a href="#">Mathematics</a>
+      <a href="#">English</a>
+    </div>
+  </div> 
+</div>
+<br><br>
+<h3 style="color: white;">Add a question</h3>
+<textarea rows="3" cols="30" name="ques" ></textarea><br><br>
+<h3 style="color: white;">Option 1</h3>
+<input type="text" id="options" name="option"><br><br>
+<h3 style="color: white;">Option 2</h3>
+<input type="text" id="options" name="option"><br><br>
+<h3 style="color: white;">Option 3</h3>
+<input type="text" id="options" name="option"><br><br>
+<h3 style="color: white;">Option 4</h3>
+<input type="text" id="options" name="option"><br><br>
+<h3 style="color: white;">Correct Option</h3>
+<input type="text" id="answer" name="correctans"><br><br>
+<h3 style="color: white;">Add Description</h3>
+<textarea rows="3" cols="30" name="description" ></textarea><br><br>
+<center><button class="button" name="sub" style="width:120px; height:45px;"><strong>SUBMIT</strong></button></center>
+
+</form>
+
+
+</body>
+</html>

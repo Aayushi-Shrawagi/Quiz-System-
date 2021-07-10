@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Online Quiz Project</title>
+<div class="wrapper fadeInDown">
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <div id="formContent">
+    <!-- Icon -->
+    <center><h1>Online Quiz Project</h1></center>
+    <div class="fadeIn first">
+      <img src="user.png" id="icon" alt="User Icon" width="85" height="100">
+    </div>
+    <!-- Login Form -->
+    <div class="form">
+      <form class="Student" action="Student.jsp" method="post">
+      <input type="text"  class="fadeIn second" name="username" placeholder="Username" >
+      <input type="password"  class="fadeIn third" name="password" placeholder="Password">
+      <input type="submit" name="sub" class="fadeIn fourth" value="Login">
+      <p class ="message"><a href="#">Faculty?</a></p>
+      </form>
+      <form class="Faculty" action="Teacher.jsp" method="post">
+      <input type="text" class="fadeIn second" name="username" placeholder="Username">
+      <input type="password"  class="fadeIn third" name="password" placeholder="Password">
+      <input type="submit" name="sub" class="fadeIn fourth" value="Login">
+      <p class ="message"><a href="#">Student?</a></p>
+      </form>
+    </div>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="">Forgot Password?</a>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script>
+    $('.message a').click(function(){
+      $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+    });
+  </script>
+
+</div>
+
+
